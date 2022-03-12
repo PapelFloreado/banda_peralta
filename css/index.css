@@ -1,0 +1,165 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Variables */
+
+:root {
+    --principal: white;
+    --secondary: black;
+    --font-primary: 'Roboto', sans-serif;
+    --text-lg: 2em;
+    --text-md: 1.6em;
+}
+
+/* Reset */
+
+*,
+*::before,   
+*::after    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Globals */
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font-primary);
+}
+
+body {
+    min-height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--principal);
+    display: inline-block;
+}
+
+/* Helpers */
+
+.flex-row {
+    display: flex;
+
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+/* Header */
+
+header {
+    background-color: var(--secondary);
+}
+
+header .navbar {
+    max-height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+
+header .logo {
+    padding: 1rem 1rem;
+    flex-basis: 30%;
+}
+
+header .menu {
+    flex-basis: 40%;
+    justify-content: space-between;
+}
+
+header .menu__item {
+    border: 2px solid var(--secondary);
+    transition: border-color .4s ease-in-out;
+}
+
+.menu .menu__item:hover {
+    border-color: var(--principal);
+}
+
+.menu .menu__item .menu__link {
+    font-size: var(--text-md);
+    padding: 1rem;
+}
+
+
+
+/* Main */
+
+#main { 
+    min-height: 80vh;
+    font-family: var(--font-primary);
+}
+
+.title {
+    text-transform: uppercase;  
+    font-weight: 900;
+    font-size: 62px;   
+}
+
+.title__all {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 62px;
+}
+
+.flex-row .text {
+    font-size: var(--text-md);
+    text-align: left;
+    padding: 2rem;
+    align-items: center; 
+}
+
+.flex-row .iframe .iframe__video {
+    padding: 2rem;        
+}
+
+
+/* #table {
+    display: inline-block;
+}
+
+.tabla__buy {
+    text-decoration: none;
+    color: black;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--secondary);
+    min-height: 10vh;
+}
+
+.pieDePagina .flex-row .container {   
+    font-family: var(--font-primary);
+    text-align: center;
+
+}
+
+/* .pieDePagina__link {
+    display: flex
+}
+
+.pieDePagina__image {
+    display: inline-block;
+} */
+
+
+
+
