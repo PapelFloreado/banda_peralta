@@ -11,60 +11,64 @@
 <body>
     <!-- Comienzo del Header -->
     <header>
-        <nav class="navbar">
-            <a href="../../Index.html">
-                <img id="navbar__image" src="../img/Logo.png" alt="logo de Entre Perros" width="145px">
-            </a>
-            <ul>
-                <li class="navbar__list navbar__tour">
-                    <a class="navbar__items" href="Tour.html">Tour</a>
+        <nav class="navbar flex-row container">
+            <picture>
+                <a href="../../Index.html">
+                <img class="logo" src="../img/Logo.png" alt="logo de Entre Perros" width="145px">
+                </a>
+            </picture>
+            <ul class="menu flex-row">
+                <li class="menu__item">
+                    <a class="menu__link" href="Tour.html">Tour</a>
                 </li>
-                <li class="navbar__list">
-                    <a class="navbar__items" href="Discografía.html">Discografía</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="Discografía.html">Discografía</a>
                 </li>
-                <li class="navbar__list">
-                    <a class="navbar__items" href="Galería.html">Galería</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="Galería.html">Galería</a>
                 </li>
-                <li class="navbar__list">
-                    <a class="navbar__items" href="Contacto.html">Contacto</a>
+                <li class="menu__item">
+                    <a class="menu__link" href="Contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
     <!-- Final del Header -->
-    <main id="main">
+    <main class="main container">
         <h2 class="title__all">Contacto</h2>
         <section>
-            <p class="text__description">Dejanos tu mensaje, nos comunicaremos a la brevedad.</p>
+            <article>
+                <p id="text__responsive" class="text__description">Dejanos tu mensaje, nos comunicaremos a la brevedad.</p>
+            </article>
         </section>
         <div>
-            <form class="form" action="" method="post" enctype="text/plain">
-                <label for="name">Ingrese su nombre</label>
-                <input type="text" name="name" id="name" placeholder="Ingrese su nombre"><br>
-                <label for="email">Ingrese su email</label>
-                <input type="email" name="email" id="email" placeholder="Ingrese su email"><br>
-                <textarea name="text" id="text" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea><br>
-                <button type="reset">Limpiar Formulario</button>
-                <button type="submit">Enviar</button>
+            <form id="form__responsive" class="form" action="" method="post" enctype="text/plain">
+                <label class="name"  for="name">Ingrese su nombre</label>
+                <input class="nametype" type="text" name="name" id="name" placeholder="Ingrese su nombre"><br>
+                <label class="email" for="email">Ingrese su email</label>
+                <input class="emailtype" type="email" name="email" id="email" placeholder="Ingrese su email"><br>
+                <textarea class="textarea" name="text" id="text" cols="30" rows="10" placeholder="Dejanos tu mensaje"></textarea><br>
+                <button class="clean" type="reset">Limpiar Formulario</button>
+                <button class="submit" type="submit">Enviar</button>
             </form>
         </div>
     </main>
-    <footer class="pieDePagina">
-        <a class="pieDePagina__link" href="https://www.instagram.com/entreperros_/" target="_blank">
-            <img class="pieDePagina__image" src="../img/Icon/instagram-logo.png" alt="Instagram" style="width: 50px;">
-        </a>
-        <a class="pieDePagina__link" href="https://es-la.facebook.com/EntrePerrosRock/" target="_blank">
-            <img class="pieDePagina__image" src="../img/Icon/facebook-logo.png" alt="Facebook" style="width: 50px;">
-        </a>
-        <a class="pieDePagina__link" href="https://www.youtube.com/channel/UCUHUxVZeduurLeg3hDQViow" target="_blank">
-            <img class="pieDePagina__image" src="../img/Icon/youtube-logo.png" alt="Youtube" style="width: 50px;">
-        </a>
-        <a class="pieDePagina__link" href="https://open.spotify.com/artist/4gyKdT8HV9uGvCTbRFA04M?si=q_hZ8-HGSDWm3PwPeySgLg" target="_blank">
-           <img class="pieDePagina__image" src="../img/Icon/spotify-logo.png" alt="spotify" style="width: 50px;">
-        </a>
-        <section>    
-            <p class="pieDePagina__derechos">Todos los derechos reservados </p>
-        </section>
+    <footer>
+        <picture class="pieDePagina flex-row container">
+            <a class="pieDePagina__link container" href="https://www.instagram.com/entreperros_/" target="_blank">
+                <img class="pieDePagina__image container" src="../img/Icon/instagram-logo.png" alt="Instagram" style="width: 40px;">
+            </a>
+            <a class="pieDePagina__link container" href="https://es-la.facebook.com/EntrePerrosRock/" target="_blank">
+                <img class="pieDePagina__image container" src="../img/Icon/facebook-logo.png" alt="Facebook" style="width: 40px;">
+            </a>
+            <a class="pieDePagina__link container" href="https://www.youtube.com/channel/UCUHUxVZeduurLeg3hDQViow" target="_blank">
+                <img class="pieDePagina__image container" src="../img/Icon/youtube-logo.png" alt="Youtube" style="width: 40px;">
+            </a>
+            <a class="pieDePagina__link container" href="https://open.spotify.com/artist/4gyKdT8HV9uGvCTbRFA04M?si=q_hZ8-HGSDWm3PwPeySgLg" target="_blank">
+                <img class="pieDePagina__image container" src="../img/Icon/spotify-logo.png" alt="spotify" style="width: 40px;">
+            </a>
+        </picture>
+        <p class="pieDePagina__derechos container">Todos los derechos reservados </p>
     </footer>   
 </body>
 </html>
