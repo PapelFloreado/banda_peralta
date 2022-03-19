@@ -106,8 +106,13 @@ header .menu__item {
 /* Main */
 
 .main { 
+    
     min-height: 80vh;
     font-family: var(--font-primary);
+}
+
+section {
+    padding-top: 2em;
 }
 
 article .text__description {
@@ -252,10 +257,6 @@ div picture img {
         
     }
 
-.flex__gallery2 {
-    display: flex;
-      
-}
 
 
 

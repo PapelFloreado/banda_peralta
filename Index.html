@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="Public/img/Icon/favicon.ico" type="image/x-icon">
     <title>Entre Perros - Home</title>
 </head>
@@ -35,9 +36,9 @@
     </header>
     <!-- Fin del Header -->
     <main class="main container">
-        <h1 class="title container title__responsive">Entre Perros</h1>
+        <h1 data-aos="fade-right" data-aos-duration="1500" class="title container title__responsive">Entre Perros</h1>
         <section class="flex-row column-responsive">
-            <article class="text">
+            <article data-aos="fade-right" data-aos-duration="1500" class="text">
                 <p class="text__description">Con orígenes musicales inspirados en el folk rock y con presencia de algunos temas reggae en su repertorio, actualmente transita el género canción. Su rock llegado como de otra época, es una de las más gratas sorpresas de la temporada y todo parece indicar que su popularidad va a seguir creciendo durante 2022. Entre Perros se formó en El Palomar en el año 2008. La agrupación está integrada por Damián Sabatino en guitarra y coros, Hernán Sánchez en voz, armónica y guitarra, Ariel Sciacchitano en batería, Gabriel Peralta en teclados y Guillermo Iannino en bajo.</p>
             </article>
             <div class="iframe">
@@ -62,5 +63,9 @@
         </picture>
         <p class="pieDePagina__derechos container">Todos los derechos reservados </p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
