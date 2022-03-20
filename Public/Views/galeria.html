@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="../img/Icon/favicon.ico" type="image/x-icon">
     <title>Entre perros - Galería</title>
 </head>
@@ -14,7 +15,7 @@
         <nav class="navbar flex-row container">
             <picture>
                 <a href="../../index.html">
-                <img class="logo" src="../img/Logo.png" alt="logo de Entre Perros" width="145px">
+                <img class="logo zoom" src="../img/Logo.png" alt="logo de Entre Perros" width="145px">
                 </a>
             </picture>
             <ul class="menu flex-row">
@@ -35,9 +36,9 @@
     </header>
     <!-- Fin del Header -->
     <main class="main container">
-        <h2 class="title__all">Galería</h2>
+        <h2 data-aos="fade-right" data-aos-duration="1500" class="title__all">Galería</h2>
         <section>
-            <div class="flex__gallery">
+            <div data-aos="fade-right" data-aos-duration="1500" class="flex__gallery">
                 <picture>
                     <img src="../img/Banda (1).jpg" alt="Imagen de la banda show en vivo">
                 </picture>
@@ -62,19 +63,23 @@
     <footer>
         <picture class="pieDePagina flex-row container">
             <a class="pieDePagina__link container" href="https://www.instagram.com/entreperros_/" target="_blank">
-                <img class="pieDePagina__image container" src="../img/Icon/instagram-logo.png" alt="Instagram" style="width: 40px;">
+                <img class="pieDePagina__image container zoom__redes" src="../img/Icon/instagram-logo.png" alt="Instagram" style="width: 40px;">
             </a>
             <a class="pieDePagina__link container" href="https://es-la.facebook.com/EntrePerrosRock/" target="_blank">
-                <img class="pieDePagina__image container" src="../img/Icon/facebook-logo.png" alt="Facebook" style="width: 40px;">
+                <img class="pieDePagina__image container zoom__redes" src="../img/Icon/facebook-logo.png" alt="Facebook" style="width: 40px;">
             </a>
             <a class="pieDePagina__link container" href="https://www.youtube.com/channel/UCUHUxVZeduurLeg3hDQViow" target="_blank">
-                <img class="pieDePagina__image container" src="../img/Icon/youtube-logo.png" alt="Youtube" style="width: 40px;">
+                <img class="pieDePagina__image container zoom__redes" src="../img/Icon/youtube-logo.png" alt="Youtube" style="width: 40px;">
             </a>
             <a class="pieDePagina__link container" href="https://open.spotify.com/artist/4gyKdT8HV9uGvCTbRFA04M?si=q_hZ8-HGSDWm3PwPeySgLg" target="_blank">
-                <img class="pieDePagina__image container" src="../img/Icon/spotify-logo.png" alt="spotify" style="width: 40px;">
+                <img class="pieDePagina__image container zoom__redes" src="../img/Icon/spotify-logo.png" alt="spotify" style="width: 40px;">
             </a>
         </picture>
         <p class="pieDePagina__derechos container">Todos los derechos reservados </p>
-    </footer> 
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
