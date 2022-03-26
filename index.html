@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="shortcut icon" href="Public/img/Icon/favicon.ico" type="image/x-icon">
@@ -12,57 +13,63 @@
 <body>
     <!-- Inicio del Header -->
     <header>
-        <nav class="navbar flex-row container">
-            <picture>
-                <a href="index.html">
-                <img class="logo zoom" src="Public/img/Logo.png" alt="logo de Entre Perros" width="145px">
+        <nav class="navbar navbar-expand-lg navbar-light bg-black contenedor p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index.html">
+                    <img class="zoom" src="./Public/img/Logo.png" alt="Logo de la Banda Entre Perros" width="125px">
                 </a>
-            </picture>
-            <ul class="menu flex-row">
-                <li class="menu__item">
-                    <a class="menu__link" href="Public/Views/tour.html">Tour</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="Public/Views/discografia.html">Discografía</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="Public/Views/galeria.html">Galería</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="Public/Views/contacto.html">Contacto</a>
-                </li>
-            </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>         
+                <div class="collapse navbar-collapse contenedor justify-content-end " id="navbarNav">
+                    <ul class="navbar-nav menu">
+                        <li class="nav-item menu__item">
+                            <a class="nav-link menu__link active" aria-current="page" href="./Public/Views/tour.html">Tour</a>
+                        </li>
+                        <li class="nav-item menu__item   active">
+                            <a class="nav-link menu__link  active" aria-current="page" href="./Public/Views/discografia.html">Discografía</a>
+                        </li>
+                        <li class="nav-item menu__item ">
+                            <a class="nav-link menu__link  active" aria-current="page" href="./Public/Views/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item menu__item ">
+                            <a class="nav-link menu__link  active" aria-current="page" href="./Public/Views/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Fin del Header -->
-    <main class="main container">
-        <h1 data-aos="fade-right" data-aos-duration="1500" class="title container title__responsive">Entre Perros</h1>
-        <section class="flex-row column-responsive">
+    <main class="main row contenedor">
+        <h1 data-aos="fade-right" data-aos-duration="1500" class="col-12 title contenedor title__responsive">Entre Perros</h1>
+        <section id="flex-row" class="column-responsive">
             <article data-aos="fade-right" data-aos-duration="1500" class="text">
                 <p class="text__description">Con orígenes musicales inspirados en el folk rock y con presencia de algunos temas reggae en su repertorio, actualmente transita el género canción. Su rock llegado como de otra época, es una de las más gratas sorpresas de la temporada y todo parece indicar que su popularidad va a seguir creciendo durante 2022. Entre Perros se formó en El Palomar en el año 2008. La agrupación está integrada por Damián Sabatino en guitarra y coros, Hernán Sánchez en voz, armónica y guitarra, Ariel Sciacchitano en batería, Gabriel Peralta en teclados y Guillermo Iannino en bajo.</p>
             </article>
-            <div class="iframe">
+            <div class="iframe justify-content-end">
                 <iframe class="iframe__video" width="560" height="315" src="https://www.youtube.com/embed/Bnnghs4_deU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>    
             </div>
         </section>
     </main>
-    <footer>
-        <picture class="pieDePagina flex-row container">
-            <a class="pieDePagina__link container" href="https://www.instagram.com/entreperros_/" target="_blank">
-                <img class="pieDePagina__image container zoom__redes" src="Public/img/Icon/instagram-logo.png" alt="Instagram" style="width: 40px;">
+    <footer class="col-lg-12">
+        <picture id="flex-row" class="flex-row pieDePagina contenedor">
+            <a class="pieDePagina__link contenedor" href="https://www.instagram.com/entreperros_/" target="_blank">
+                <img class="pieDePagina__image contenedor zoom__redes" src="Public/img/Icon/instagram-logo.png" alt="Instagram" style="width: 40px;">
             </a>
-            <a class="pieDePagina__link container" href="https://es-la.facebook.com/EntrePerrosRock/" target="_blank">
-                <img class="pieDePagina__image container zoom__redes" src="Public/img/Icon/facebook-logo.png" alt="Facebook" style="width: 40px;">
+            <a class="pieDePagina__link contenedor" href="https://es-la.facebook.com/EntrePerrosRock/" target="_blank">
+                <img class="pieDePagina__image contenedor zoom__redes" src="Public/img/Icon/facebook-logo.png" alt="Facebook" style="width: 40px;">
             </a>
-            <a class="pieDePagina__link container" href="https://www.youtube.com/channel/UCUHUxVZeduurLeg3hDQViow" target="_blank">
-                <img class="pieDePagina__image container zoom__redes" src="Public/img/Icon/youtube-logo.png" alt="Youtube" style="width: 40px;">
+            <a class="pieDePagina__link contenedor" href="https://www.youtube.com/channel/UCUHUxVZeduurLeg3hDQViow" target="_blank">
+                <img class="pieDePagina__image contenedor zoom__redes" src="Public/img/Icon/youtube-logo.png" alt="Youtube" style="width: 40px;">
             </a>
-            <a class="pieDePagina__link container" href="https://open.spotify.com/artist/4gyKdT8HV9uGvCTbRFA04M?si=q_hZ8-HGSDWm3PwPeySgLg" target="_blank">
-                <img class="pieDePagina__image container zoom__redes" src="Public/img/Icon/spotify-logo.png" alt="spotify" style="width: 40px;">
+            <a class="pieDePagina__link contenedor" href="https://open.spotify.com/artist/4gyKdT8HV9uGvCTbRFA04M?si=q_hZ8-HGSDWm3PwPeySgLg" target="_blank">
+                <img class="pieDePagina__image contenedor zoom__redes" src="Public/img/Icon/spotify-logo.png" alt="spotify" style="width: 40px;">
             </a>
         </picture>
-        <p class="pieDePagina__derechos container">Todos los derechos reservados </p>
+        <p class="pieDePagina__derechos contenedor">Todos los derechos reservados </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();

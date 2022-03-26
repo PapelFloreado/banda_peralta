@@ -34,21 +34,32 @@ html {
 
 body {
     min-height: 100vh;
+    font-family: var(--font-primary);
+    color: var(--secondary);
 }
 
-ul {
-    list-style-type: none;
+.contenedor {
+    max-width: 1080px;
+    margin: 0 auto;
 }
 
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+    color: var(--principal);
+    font-family: var(--font-primary);
+    font-size: 1.5rem;
+    padding: 2 2em;
+}
 a {
     text-decoration: none;
     color: var(--principal);
-    display: inline-block;
+    
+    
 }
 
 /* Helpers */
 
-.flex-row {
+#flex-row {
     display: flex;
 
 }
@@ -58,31 +69,21 @@ a {
     flex-direction: column;
 }
 
-.container {
-    max-width: 1080px;
-    margin: 0 auto;
-}
 
 /* Header */
 
 header {
-    background-color: var(--secondary);
+    background-color:var(--secondary);
 }
 
-header .navbar {
-    justify-content: space-between;
-    align-items: center;
-    padding: 0rem 2rem;
-    position: static;
+.navbar-toggler {
+    background-color: var(--principal);
 }
 
-header .logo {
-    padding: 1rem 1rem;
-    flex-basis: 30%;
-}
+
 
 header .menu {
-    flex-basis: 40%;
+    flex-basis: 50%;
     justify-content: space-between;
 }
 
@@ -98,6 +99,7 @@ header .menu__item {
 .menu .menu__item .menu__link {
     font-size: var(--text-md);
     padding: 1rem;
+    color: var(--principal);
 }
 
 
@@ -131,10 +133,10 @@ article .text__description {
     font-size: 62px;
 }
 
-.flex-row .text__description {
+.text__description {
     font-size: var(--text-md);
     text-align: left;
-    padding: 2rem 2rem 0 0;
+    /* padding: 2rem 2rem 0 0; */
     align-items: center;
     line-height: 3rem; 
 }
@@ -147,132 +149,47 @@ div .iframe {
     padding: 2rem 2rem 0 0;
 }
 
-#grid__tour {
-    display: grid;
-    grid-template-areas: 
-    "Lugar1 Fecha1 Comprar1"
-    "Lugar2 Fecha2 Comprar2"
-    "Lugar3 Fecha3 Comprar3"
-    "Lugar4 Fecha4 Comprar4";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
+
+ul li {
+    list-style-type: none;
+    
+}
+
+.caja__texto {
+    background-color: var(--secondary);
+    border-radius: 0.6em;
+}
+
+.text__tour {
     font-size: var(--text-md);
-    margin-top: 2em;
-    gap: 2em; 
-    justify-items: center;
-    line-height: 1.8em;
 }
-
-ul .lugar1 {
-    grid-area: Lugar1;
-}
-
-ul .fecha1 {
-    grid-area: Fecha1;
-}
-
-ul .comprar1 {
-    grid-area: Comprar1;
-}
-
-ul .lugar2 {
-    grid-area: Lugar2;
-}
-
-ul .fecha2 {
-    grid-area: Fecha2;
-}
-
 ul .comprar2 {
-    grid-area: Comprar2;
+    
     background-color: var(--secondary);
     color: var(--principal);
     border-radius: 0.6em;
-    width: 50%;
+    width: 10%;
     text-align: center;
 }
-
-ul .lugar3 {
-    grid-area: Lugar3;
-}
-
-ul .fecha3 {
-    grid-area: Fecha3;
-}
-
-ul .comprar3 {
-    grid-area: Comprar3;
+li .comprar3 {
+    
     background-color: var(--secondary);
     color: var(--principal);
     border-radius: 0.6em;
-    width: 50%;
+    width: 10%;
     text-align: center;
 }
-
-ul .lugar4 {
-    grid-area: Lugar4;
-}
-
-ul .fecha4 {
-    grid-area: Fecha4;
-}
-
 ul .comprar4 {
-    grid-area: Comprar4;
+    
     background-color: var(--secondary);
     color: var(--principal);
     border-radius: 0.6em;
-    width: 50%;
+    width: 10%;
     text-align: center;
-}
-
-a .comprar4:hover {
-    background-color: #616161;
 }
 
 a .comprar {
     transition: background-color 3s ease-in-out;
-}
-
-#grid__music {
-    display: grid;
-    grid-template-areas: "iframe1 iframe2 iframe3 iframe4";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-}
-
-
-.flex__gallery {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    gap: 1.5em;
-}
-
-div picture img {
-        width: 100%;
-        height: 20em;
-        
-    }
-
-
-
-
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2em;
-    font-size: var(--text-md);
-    background-color: #cfcfcfc5;
-    border-radius: 1em;
-    line-height: 2em;
-    max-width: 18em;
-    margin-left: 25em;
-
 }
 
 
@@ -295,9 +212,19 @@ footer p {
 /* Responsive */
 
 @media screen and  (max-width: 720px) {
+    /* .logo {
+        max-width: 55%;
+        flex-basis: 20%;
+    } */
+    
     .title {   
         text-align: center;
         font-size: 4em;
+    }
+
+    .menu {
+        font-size: .8em;
+        flex-basis: 30%;
     }
 
     .title__all {
@@ -313,7 +240,7 @@ footer p {
     .column-responsive {
         display: flex;
         flex-direction: column;
-        padding: 3em;
+        padding: 1em;
         align-items: center;
         justify-content: center;
     }
@@ -325,8 +252,8 @@ footer p {
         justify-content: center;
         margin-left: 10em;
     }
-
-
+    
+    
 }
 
 @media screen and (max-width: 480px) {
@@ -336,7 +263,10 @@ footer p {
     }
 
     .logo {
-        width: 100%;
+        max-width: 40%;
+        flex-basis:5%;
+        
+
     }
 
     .title {
@@ -351,12 +281,12 @@ footer p {
 
     #text__responsive {
 
-        text-align: center;
+        text-align: justify;
     }
     
     .text__description {
         font-size:var(--text-small);
-        line-height: 2em;
+        line-height: 1.5em;
     }
 
     .column-responsive {
@@ -374,7 +304,7 @@ footer p {
     }
 
 
-    #grid__music {
+    /* #grid__music {
         display: grid;
         grid-template-areas: 
         "iframe1 iframe2"
@@ -390,19 +320,19 @@ footer p {
     #grid__tour {
         font-size: var(--text-md-sm);
         line-height: 5em;
-    }
+    } */
 
     ul li .comprar3{
         width: 60%;
     }    
 
-    #form__responsive {
+    /* #form__responsive {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
         margin: 1.8em;
-    }
+    } */
 
 }
 
