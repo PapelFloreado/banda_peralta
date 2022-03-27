@@ -192,8 +192,14 @@ a .comprar {
     transition: background-color 3s ease-in-out;
 }
 
+.form {
+    font-size: var(--text-md);
 
+}
 
+textarea {
+    height: auto;
+}
 
 /* Footer */
 
