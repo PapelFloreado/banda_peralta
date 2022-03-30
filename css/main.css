@@ -1,0 +1,257 @@
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Hubballi&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Miscelaneous*/
+/* Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* Globals */
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif; }
+
+body {
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  color: black; }
+
+.contenedor {
+  max-width: 1080px;
+  margin: 0 auto; }
+
+a {
+  text-decoration: none;
+  color: white; }
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  padding: 2 2em; }
+
+/* Helpers */
+#flex-row {
+  display: flex; }
+
+.flex-column {
+  display: flex;
+  flex-direction: column; }
+
+/* Animaciones */
+.zoom {
+  transition: transform ease-in-out 1s; }
+
+.zoom:hover {
+  transform: scale(1.15); }
+
+.comprar__tickets {
+  transition: transform ease-in-out .8s; }
+
+.comprar__tickets:hover {
+  transform: scale(1.25); }
+
+.zoom__tickets {
+  transition: transform ease-in-out 0.8s; }
+
+.zoom__redes {
+  transition: transform ease-in-out 0.8s; }
+
+.zoom__redes:hover {
+  transform: scale(1.25); }
+
+.show {
+  animation: show 0.8s ease-in-out; }
+
+@keyframes show {
+  0% {
+    transform: scale(1, 1); }
+  50% {
+    transform: scale(1.5, 1.5); }
+  100% {
+    transform: scale(1, 1); } }
+
+/* Partials */
+header {
+  background-color: black; }
+  header .navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: white;
+    border: 1px solid #fff;
+    border-radius: .25rem;
+    transition: box-shadow .15s ease-in-out;
+    color: white; }
+  header .menu {
+    flex-basis: 50%;
+    justify-content: space-between; }
+    header .menu__item {
+      border: 2px solid black;
+      transition: border-color .4s ease-in-out; }
+      header .menu__item:hover {
+        border-color: white; }
+    header .menu__link {
+      font-size: 1.6em;
+      padding: 1rem;
+      color: white; }
+
+footer p {
+  text-align: center; }
+
+footer .pieDePagina {
+  background-color: white;
+  justify-content: space-between; }
+
+@media screen and (max-width: 480px) {
+  footer {
+    min-height: fit-content; } }
+
+/* Views */
+main {
+  min-height: 80vh;
+  font-family: "Roboto", sans-serif; }
+  main section {
+    padding-top: 1em; }
+  main .title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 62px; }
+  main article .text__description {
+    font-size: 1.6em;
+    text-align: left;
+    align-items: center;
+    line-height: 3rem; }
+  main div .iframe {
+    width: 100%; }
+  main .flex-row .iframe .iframe__video {
+    padding: 2rem 2rem 0 0; }
+
+/* Responsive */
+@media screen and (max-width: 720px) {
+  main .title {
+    text-align: center;
+    font-size: 3em; }
+  main .title__all {
+    font-size: 4em;
+    text-align: center; }
+  main #text__responsive {
+    text-align: center; }
+  .menu {
+    font-size: .8em;
+    flex-basis: 30%; }
+  .column-responsive {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+    justify-content: center; } }
+
+@media screen and (max-width: 480px) {
+  nav .logo {
+    max-width: 40%;
+    flex-basis: 5%; }
+  nav .menu {
+    font-size: 0.7em; }
+  main .title {
+    font-size: 2.5em;
+    text-align: center; }
+  main .title__all {
+    font-size: 2em;
+    text-align: center; }
+  main .text__description {
+    font-size: 0.5em;
+    line-height: 1.5em; }
+  .menu {
+    font-size: 0.7em; }
+  #text__responsive {
+    text-align: justify; }
+  .column-responsive {
+    display: flex;
+    flex-direction: column;
+    padding: 2em; }
+  .iframe__video {
+    width: 100%; }
+  footer {
+    min-height: fit-content; }
+  ul li .comprar3 {
+    width: 60%; } }
+
+/* Tour */
+main {
+  font-family: "Roboto", sans-serif;
+  min-height: 80vh; }
+  main .title__all {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 62px; }
+  main article .text__description {
+    font-size: 1.6em;
+    text-align: left;
+    align-items: center;
+    line-height: 3rem; }
+  main .text__tour {
+    font-size: 1.6em; }
+  main .caja__texto {
+    background-color: black;
+    border-radius: 0.6em; }
+  main ul li {
+    list-style-type: none; }
+  main ul .comprar2 {
+    background-color: black;
+    color: white;
+    border-radius: 0.6em;
+    width: 100%;
+    text-align: center; }
+  main ul .comprar3 {
+    background-color: black;
+    color: white;
+    border-radius: 0.6em;
+    width: 100%;
+    text-align: center; }
+  main ul .comprar4 {
+    background-color: black;
+    color: white;
+    border-radius: 0.6em;
+    width: 100%;
+    text-align: center; }
+
+@media screen and (max-width: 720px) {
+  main .title__all {
+    font-size: 4em;
+    text-align: center; } }
+
+@media screen and (max-width: 480px) {
+  main .title__all {
+    font-size: 2em;
+    text-align: center; }
+  main .text__description {
+    font-size: 0.5em;
+    line-height: 1.5em; } }
+
+/* Discografia */
+main {
+  font-family: "Roboto", sans-serif;
+  min-height: 80vh; }
+  main .title__all {
+    text-transform: uppercase;
+    font-weight: 900; }
+
+/* Galeria */
+main {
+  font-family: "Roboto", sans-serif;
+  min-height: 80vh; }
+  main .title__all {
+    text-transform: uppercase;
+    font-weight: 900; }
+
+/* Contacto */
+main {
+  font-family: "Roboto", sans-serif;
+  min-height: 80vh; }
+  main .title__all {
+    text-transform: uppercase;
+    font-weight: 900; }

@@ -1,0 +1,90 @@
+/* Tour */
+
+main {
+    font-family: $font-primary;
+    min-height: 80vh;
+     
+    .title__all {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 62px;
+     
+        
+    }
+    article {
+        .text__description {
+            font-size: $text-md;
+            text-align: left;
+            align-items: center;
+            line-height: 3rem; 
+        }
+    }
+    
+    
+    .text__tour {
+        font-size: $text-md;
+    }
+    
+    .caja__texto {
+        background-color:$secondary;
+        border-radius: 0.6em;
+    }
+
+    ul li {
+        list-style-type: none;
+            
+    }
+
+    ul {
+        .comprar2 {
+            background-color:$secondary;
+            color: $principal;
+            border-radius: 0.6em;
+            width: 100%;
+            text-align: center;
+        }
+        .comprar3 {
+            background-color:$secondary;
+            color: $principal;
+            border-radius: 0.6em;
+            width: 100%;
+            text-align: center;
+        }
+        .comprar4 {
+    
+            background-color:$secondary;
+            color: $principal;
+            border-radius: 0.6em;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and  (max-width: 720px) {
+    
+
+    main {    
+        .title__all {
+            font-size: 4em;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+
+    main{
+          
+        .title__all {
+            font-size: 2em;
+            text-align: center  ;
+        }
+        .text__description {
+            font-size:$text-small;
+            line-height: 1.5em;
+        }
+
+    }
+}

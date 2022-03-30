@@ -1,0 +1,38 @@
+header {
+
+    background-color:$secondary;
+
+    .navbar-toggler {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: white;
+        border: 1px solid #fff;
+        border-radius: .25rem;
+        transition: box-shadow .15s ease-in-out;
+        color: $principal;
+    }
+
+    
+    .menu {
+        flex-basis: 50%;
+        justify-content: space-between;
+
+        &__item {
+            border: 2px solid $secondary;
+            transition: border-color .4s ease-in-out;
+
+            &:hover {
+                border-color: $principal;
+            }
+        }
+        
+        &__link {
+            font-size: $text-md;
+            padding: 1rem;
+            color: $principal;
+        }  
+    }
+}
+    
+
