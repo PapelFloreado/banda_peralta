@@ -34,13 +34,6 @@ a {
   padding: 2 2em; }
 
 /* Helpers */
-#flex-row {
-  display: flex; }
-
-.flex-column {
-  display: flex;
-  flex-direction: column; }
-
 /* Animaciones */
 .zoom {
   transition: transform ease-in-out 1s; }
@@ -89,10 +82,12 @@ header {
   header .menu {
     flex-basis: 50%;
     justify-content: space-between; }
-    header .menu__item {
+    header .menu__item, header .menu__item--active {
       border: 2px solid black;
       transition: border-color .4s ease-in-out; }
-      header .menu__item:hover {
+      header .menu__item--active {
+        border-bottom: 2px solid white; }
+      header .menu__item:hover, header .menu__item--active:hover {
         border-color: white; }
     header .menu__link {
       font-size: 1.6em;
@@ -104,7 +99,8 @@ footer p {
 
 footer .pieDePagina {
   background-color: white;
-  justify-content: space-between; }
+  justify-content: space-between;
+  display: flex; }
 
 @media screen and (max-width: 480px) {
   footer {
@@ -115,7 +111,8 @@ main {
   min-height: 80vh;
   font-family: "Roboto", sans-serif; }
   main section {
-    padding-top: 1em; }
+    padding-top: 1em;
+    display: flex; }
   main .title {
     text-transform: uppercase;
     font-weight: 900;
@@ -125,19 +122,12 @@ main {
     text-align: left;
     align-items: center;
     line-height: 3rem; }
-  main div .iframe {
-    width: 100%; }
-  main .flex-row .iframe .iframe__video {
-    padding: 2rem 2rem 0 0; }
 
 /* Responsive */
 @media screen and (max-width: 720px) {
   main .title {
     text-align: center;
     font-size: 3em; }
-  main .title__all {
-    font-size: 4em;
-    text-align: center; }
   main #text__responsive {
     text-align: center; }
   .menu {
@@ -194,7 +184,8 @@ main {
     align-items: center;
     line-height: 3rem; }
   main .text__tour {
-    font-size: 1.6em; }
+    font-size: 1.6em;
+    display: flex; }
   main .caja__texto {
     background-color: black;
     border-radius: 0.6em; }
@@ -219,26 +210,112 @@ main {
     width: 100%;
     text-align: center; }
 
+/* Responsive */
 @media screen and (max-width: 720px) {
+  main .title {
+    text-align: center;
+    font-size: 3em; }
   main .title__all {
     font-size: 4em;
-    text-align: center; } }
+    text-align: center; }
+  main #text__responsive {
+    text-align: center; }
+  .menu {
+    font-size: .8em;
+    flex-basis: 30%; }
+  .column-responsive {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+    justify-content: center; } }
 
 @media screen and (max-width: 480px) {
+  nav .logo {
+    max-width: 40%;
+    flex-basis: 5%; }
+  nav .menu {
+    font-size: 0.7em; }
+  main .title {
+    font-size: 2.5em;
+    text-align: center; }
   main .title__all {
     font-size: 2em;
     text-align: center; }
   main .text__description {
     font-size: 0.5em;
-    line-height: 1.5em; } }
+    line-height: 1.5em; }
+  .menu {
+    font-size: 0.7em; }
+  #text__responsive {
+    text-align: justify; }
+  .column-responsive {
+    display: flex;
+    flex-direction: column;
+    padding: 2em; }
+  .iframe__video {
+    width: 100%; }
+  footer {
+    min-height: fit-content; }
+  ul li .comprar3 {
+    width: 60%; } }
 
 /* Discografia */
-main {
+.main {
   font-family: "Roboto", sans-serif;
   min-height: 80vh; }
-  main .title__all {
+  .main .title__all {
     text-transform: uppercase;
     font-weight: 900; }
+  .main .text__description {
+    font-size: 1.6em;
+    text-align: left;
+    line-height: 3rem; }
+
+/* Responsive */
+@media screen and (max-width: 720px) {
+  main .title {
+    text-align: center;
+    font-size: 3em; }
+  main #text__responsive {
+    text-align: center; }
+  .menu {
+    font-size: .8em;
+    flex-basis: 30%; }
+  .column-responsive {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    align-items: center;
+    justify-content: center; } }
+
+@media screen and (max-width: 480px) {
+  nav .logo {
+    max-width: 40%;
+    flex-basis: 5%; }
+  nav .menu {
+    font-size: 0.7em; }
+  main .title {
+    font-size: 2.5em;
+    text-align: center; }
+  main .title__all {
+    font-size: 2em;
+    text-align: center; }
+  main .text__description {
+    font-size: 0.5em;
+    line-height: 1.5em; }
+  .menu {
+    font-size: 0.7em; }
+  #text__responsive {
+    text-align: justify; }
+  .column-responsive {
+    display: flex;
+    flex-direction: column;
+    padding: 2em; }
+  .iframe__video {
+    width: 100%; }
+  footer {
+    min-height: fit-content; } }
 
 /* Galeria */
 main {

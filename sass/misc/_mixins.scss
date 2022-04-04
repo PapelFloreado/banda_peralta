@@ -1,11 +1,9 @@
 /* Helpers */
 
-#flex-row {
-    display: flex;
+
+@mixin flex-row ($display:flex){
+    display: $display;
 
 }
 
-.flex-column {
-    display: flex;
-    flex-direction: column;
-}
+

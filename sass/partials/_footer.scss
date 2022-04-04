@@ -3,9 +3,10 @@ footer {
         text-align: center;
     }
     .pieDePagina {
-          
+        
         background-color: $principal;
         justify-content: space-between;
+        @include flex-row;
     }
 }
 

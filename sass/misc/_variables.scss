@@ -4,4 +4,13 @@ $font-primary: 'Roboto', sans-serif;
 $text-lg: 2em;
 $text-md: 1.6em;
 $text-md-sm: 1em;
-$text-small: 0.5em;
+$text-sm: 0.5em;
+
+$text-sizes: (
+    xlg: 3em,
+    lg: 2em,
+    md: 1.6em,
+    md-sm: 1em,
+    sm: 0.5em,   
+);
+

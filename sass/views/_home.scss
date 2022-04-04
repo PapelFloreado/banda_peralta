@@ -1,11 +1,13 @@
 main {
+    
     min-height: 80vh;
     font-family: $font-primary;
+    
 
     section {
         padding-top: 1em;
-        }
-
+        @include flex-row;
+    }
     .title {
         text-transform: uppercase;  
         font-weight: 900;
@@ -18,17 +20,9 @@ main {
             text-align: left;
             align-items: center;
             line-height: 3rem; 
+            
+            
         }
-    
-
-
-    div .iframe {
-            width: 100%;
-        }
-    
-    .flex-row .iframe .iframe__video {
-        padding: 2rem 2rem 0 0;
-    }
 }
 
 /* Responsive */
@@ -39,12 +33,9 @@ main {
 main {    
     .title {   
         text-align: center;
-        font-size: 3em;
+        font-size: map-get($text-sizes , xlg )
     }
-    .title__all {
-        font-size: 4em;
-        text-align: center;
-    }
+    
     #text__responsive {
         
         text-align: center;
@@ -93,7 +84,7 @@ main{
         text-align: center  ;
     }
     .text__description {
-        font-size:$text-small;
+        font-size: map-get($text-sizes, sm );
         line-height: 1.5em;
     }
 
@@ -102,10 +93,6 @@ main{
     .menu {
         font-size: 0.7em;
     }
-
-    
-
-    
 
     #text__responsive {
 
