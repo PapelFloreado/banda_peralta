@@ -11,6 +11,10 @@ main {
        
         
     }
+
+    .form {
+        font-size: map-get($text-sizes, md );
+    }
 }
 
 

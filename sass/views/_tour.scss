@@ -27,6 +27,7 @@ main {
     .text__tour {
         font-size: $text-md;
         @include flex-row;
+        align-items: center;
     }
     
     .caja__texto {
