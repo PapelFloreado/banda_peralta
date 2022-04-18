@@ -3,19 +3,63 @@
 main {
     font-family: $font-primary;
     min-height: 80vh;
-    
-       
+           
     .title__all {
         text-transform: uppercase;
-        font-weight: 900;
-       
-        
+        font-weight: 900;  
+    }
+    form {
+        font-size: map-get($text-sizes , lg );
+        background-color: $third;
+        border-radius: 1.5rem;
+        .form-control{
+            line-height: 3rem;
+        }
+        .input-lg {
+            line-height: 3rem;
+        }
     }
 
-    .form {
-        font-size: map-get($text-sizes, md );
+    // form {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     div{
+
+    //         background-color: $third;
+    //     }
+        // display: grid;
+        // grid-template-columns: .5fr;
+        // grid-template-rows: 1fr 1fr 1fr .5fr ;
+        // grid-template-areas: 
+        // "Nombre"
+        // "Email"
+        // "Mensaje"
+        // "Botones";
+        // align-self: center;
+        // align-items: center;
+        // justify-content: center;
+        // line-height: 4rem;
+        // font-size: map-get($text-sizes, md );
+        // padding: 7rem;
+        // background-color: $third;
+        // border-radius: 3rem;
+        
+        .btn-primary {
+            color: $principal;
+            background-color: $secondary;
+            border-color: $secondary;
+            
+        }
+        .btn-primary:hover {
+            color: $principal;
+            background-color: #525252;
+            border-color: $secondary    ;
+            
+        }
     }
-}
+
+
 
 
 

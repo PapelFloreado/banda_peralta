@@ -110,25 +110,40 @@ footer .pieDePagina {
 main {
   min-height: 80vh;
   font-family: "Roboto", sans-serif; }
-  main section {
-    padding-top: 1em;
-    display: flex; }
   main .title {
     text-transform: uppercase;
     font-weight: 900;
     font-size: 62px; }
-  main article .text__description {
-    font-size: 1.6em;
-    text-align: left;
-    align-items: center;
-    line-height: 2rem;
-    padding-right: 1rem; }
+  main section {
+    padding-top: 1em;
+    display: flex; }
+    main section div .iframe {
+      display: flex;
+      flex-direction: column; }
+      main section div .iframe__video {
+        padding-left: 4rem; }
+  main article {
+    display: flex;
+    flex-direction: column; }
+    main article p .text__description {
+      font-size: 1.6em;
+      text-align: justify;
+      line-height: 2.9rem;
+      padding-right: 1rem; }
 
 /* Responsive */
 @media screen and (max-width: 720px) {
   main .title {
     text-align: center;
     font-size: 3em; }
+  main section {
+    padding-top: 1em;
+    display: flex; }
+    main section div .iframe__video {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      padding-left: 0rem; }
   main #text__responsive {
     text-align: center; }
   .menu {
@@ -137,7 +152,6 @@ main {
   .column-responsive {
     display: flex;
     flex-direction: column;
-    padding: 1em;
     align-items: center;
     justify-content: center; } }
 
@@ -156,6 +170,14 @@ main {
   main .text__description {
     font-size: 0.5em;
     line-height: 1.5em; }
+  main section {
+    padding-top: 1em;
+    display: flex; }
+    main section div .iframe__video {
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      padding-left: 0rem; }
   .menu {
     font-size: 0.7em; }
   #text__responsive {
@@ -164,8 +186,6 @@ main {
     display: flex;
     flex-direction: column;
     padding: 2em; }
-  .iframe__video {
-    width: 100%; }
   footer {
     min-height: fit-content; }
   ul li .comprar3 {
@@ -183,33 +203,33 @@ main {
     font-size: 1.6em;
     text-align: left;
     align-items: center;
-    line-height: 3rem; }
-  main .text__tour {
-    font-size: 1.6em;
-    display: flex;
-    align-items: center; }
+    line-height: 2.9rem; }
+  main section .text__tour {
+    font-size: 2em;
+    padding-top: 10rem; }
   main .caja__texto {
     background-color: black;
     border-radius: 0.6em; }
   main ul li {
+    font-size: 2em;
     list-style-type: none; }
   main ul .comprar2 {
     background-color: black;
     color: white;
     border-radius: 0.6em;
-    width: 100%;
+    width: 90%;
     text-align: center; }
   main ul .comprar3 {
     background-color: black;
     color: white;
     border-radius: 0.6em;
-    width: 100%;
+    width: 90%;
     text-align: center; }
   main ul .comprar4 {
     background-color: black;
     color: white;
     border-radius: 0.6em;
-    width: 100%;
+    width: 90%;
     text-align: center; }
 
 /* Responsive */
@@ -222,6 +242,8 @@ main {
     text-align: center; }
   main #text__responsive {
     text-align: center; }
+  main section .text__tour {
+    font-size: 0.5em; }
   .menu {
     font-size: .8em;
     flex-basis: 30%; }
@@ -272,7 +294,7 @@ main {
   .main .text__description {
     font-size: 1.6em;
     text-align: left;
-    line-height: 3rem; }
+    line-height: 2.9rem; }
 
 /* Responsive */
 @media screen and (max-width: 720px) {
@@ -334,5 +356,19 @@ main {
   main .title__all {
     text-transform: uppercase;
     font-weight: 900; }
-  main .form {
-    font-size: 1.6em; }
+  main form {
+    font-size: 2em;
+    background-color: #adadad;
+    border-radius: 1.5rem; }
+    main form .form-control {
+      line-height: 3rem; }
+    main form .input-lg {
+      line-height: 3rem; }
+  main .btn-primary {
+    color: white;
+    background-color: black;
+    border-color: black; }
+  main .btn-primary:hover {
+    color: white;
+    background-color: #525252;
+    border-color: black; }

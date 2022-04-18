@@ -6,5 +6,10 @@
 
 }
 
+@mixin flex-col ($display:flex , $direction:column ){
+    display: $display;
+    flex-direction: $direction;
+}
+
 
 

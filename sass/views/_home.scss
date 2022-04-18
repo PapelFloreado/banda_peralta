@@ -3,27 +3,44 @@ main {
     min-height: 80vh;
     font-family: $font-primary;
     
+    .title {
+        text-transform: uppercase;  
+        font-weight: 900;
+        font-size: 62px;
+        
+    }
 
     section {
         padding-top: 1em;
         @include flex-row;
-    }
-    .title {
-        text-transform: uppercase;  
-        font-weight: 900;
-        font-size: 62px;   
-    }
 
-
-    article .text__description {
-            font-size: $text-md;
-            text-align: left;
-            align-items: center;
-            line-height: 2rem; 
-            padding-right: 1rem;
+        div .iframe {
+            @include flex-col;
             
+            &__video {
+                padding-left: 4rem;
             
+            }
         }
+    }
+
+
+    article {
+        @include flex-col;
+    
+        p{
+
+            .text__description {
+                    font-size: $text-md;
+                    text-align: justify;
+                    line-height: 2.9rem; 
+                    padding-right: 1rem;
+               
+            }
+        }
+
+        
+    }
 }
 
 /* Responsive */
@@ -34,7 +51,21 @@ main {
 main {    
     .title {   
         text-align: center;
-        font-size: map-get($text-sizes , xlg )
+        font-size: map-get($text-sizes , xlg );
+        }
+    section {
+        padding-top: 1em;
+        @include flex-row;
+    
+        div .iframe__video {
+            @include flex-col;
+            align-self: center;
+            padding-left: 0rem;
+            //  {
+               
+                
+            // }    
+        }
     }
     
     #text__responsive {
@@ -53,7 +84,7 @@ main {
     .column-responsive {
         display: flex;
         flex-direction: column;
-        padding: 1em;
+        // padding: 1em;
         align-items: center;
         justify-content: center;
     }
@@ -88,7 +119,21 @@ main{
         font-size: map-get($text-sizes, sm );
         line-height: 1.5em;
     }
+    section {
+        padding-top: 1em;
+        @include flex-row;
 
+        div .iframe__video {
+            @include flex-col;
+            align-self: center;
+            padding-left: 0rem;
+        //      {
+               
+            
+        //     }
+        // }
+        }
+    }    
 
 }
     .menu {
@@ -107,17 +152,11 @@ main{
         flex-direction: column;
         padding: 2em;
     }
-    
-    .iframe__video {
-        width: 100%;
-    }
 
     footer {
         min-height: fit-content;
     }
 
-
-   
 
     ul li .comprar3{
         width: 60%;
