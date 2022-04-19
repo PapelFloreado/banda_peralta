@@ -29,7 +29,6 @@ main {
         @include flex-col;
     
         p{
-
             .text__description {
                     font-size: $text-md;
                     text-align: justify;
@@ -37,9 +36,7 @@ main {
                     padding-right: 1rem;
                
             }
-        }
-
-        
+        }   
     }
 }
 
@@ -56,21 +53,13 @@ main {
     section {
         padding-top: 1em;
         @include flex-row;
+        justify-content: center;
     
         div .iframe__video {
             @include flex-col;
             align-self: center;
             padding-left: 0rem;
-            //  {
-               
-                
-            // }    
         }
-    }
-    
-    #text__responsive {
-        
-        text-align: center;
     }
 }
     .menu {
@@ -78,19 +67,14 @@ main {
         flex-basis: 30%;
     }
 
-
-    
-
     .column-responsive {
         display: flex;
         flex-direction: column;
-        // padding: 1em;
         align-items: center;
-        justify-content: center;
-    }
-
-        
+    }  
 }
+    
+    
 
 @media screen and (max-width: 480px) {
  
@@ -104,7 +88,6 @@ nav {
     }
 
 }
-
 main{
     .title {
         font-size: 2.5em;
@@ -127,11 +110,6 @@ main{
             @include flex-col;
             align-self: center;
             padding-left: 0rem;
-        //      {
-               
-            
-        //     }
-        // }
         }
     }    
 
@@ -161,9 +139,6 @@ main{
     ul li .comprar3{
         width: 60%;
     }    
-
-    
-
 }
 
 

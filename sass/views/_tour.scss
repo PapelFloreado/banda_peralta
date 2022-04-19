@@ -3,9 +3,7 @@
 main {
     font-family: $font-primary;
     min-height: 80vh;
-    
-    
-      
+       
     .title__all {
         text-transform: uppercase;
         font-weight: 900;
@@ -22,8 +20,6 @@ main {
         }
     }
     
-    
-       
 
     section{
     
@@ -33,12 +29,7 @@ main {
         
         }   
     }
-   
-        
-     
-        
 
-    
     .caja__texto {
         background-color:$secondary;
         border-radius: 0.6em;
@@ -83,24 +74,20 @@ main {
 @media screen and  (max-width: 720px) {
     
 
-    main {    
+    main {  
+
         .title {   
-            text-align: center;
             font-size: 3em;
         }
         .title__all {
             font-size: 4em;
-            text-align: center;
         }
-        #text__responsive {
-            
-            text-align: center;
-        }
+      
         section{
     
             .text__tour {
                 font-size: $text-sm;
-                
+                text-align: center;
             
             }   
         }
@@ -110,19 +97,14 @@ main {
             flex-basis: 30%;
         }
     
-    
-        
-    
         .column-responsive {
             display: flex;
             flex-direction: column;
             padding: 1em;
             align-items: center;
             justify-content: center;
-        }
-    
-            
-    }
+        }       
+}
     
     @media screen and (max-width: 480px) {
      
@@ -140,34 +122,18 @@ main {
     main{
         .title {
             font-size: 2.5em;
-            text-align: center;
         }
     
         .title__all {
             font-size: 2em;
-            text-align: center  ;
+
         }
-        .text__description {
-            font-size: map-get($text-sizes, sm );
-            line-height: 1.5em;
-        }
-    
     
     }
         .menu {
             font-size: 0.7em;
         }
     
-        
-    
-        
-    
-        #text__responsive {
-    
-            text-align: justify;
-        }
-        
-        
     
         .column-responsive {
             display: flex;
@@ -183,16 +149,11 @@ main {
             min-height: fit-content;
         }
     
-    
-       
-    
         ul li .comprar3{
             width: 60%;
         }    
     
-        
-    
-    }
+}
     
     
     

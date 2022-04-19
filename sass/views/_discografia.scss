@@ -4,8 +4,6 @@
     
     font-family: $font-primary;
     min-height: 80vh;
-    
-    
         .title__all {
             text-transform: uppercase;
             font-weight: 900;
@@ -19,8 +17,7 @@
             line-height: 2.9rem;  
             
         }
-       
-                
+                    
 }
 /* Responsive */
 
@@ -32,29 +29,20 @@
             text-align: center;
             font-size: map-get($text-sizes , xlg )
         }
-        
-        #text__responsive {
-            
-            text-align: center;
-        }
     }
         .menu {
             font-size: .8em;
             flex-basis: 30%;
         }
-    
-    
-        
-    
+
         .column-responsive {
             display: flex;
             flex-direction: column;
             padding: 1em;
             align-items: center;
             justify-content: center;
+            align-items: center;
         }
-    
-            
     }
     
     @media screen and (max-width: 480px) {
@@ -91,12 +79,6 @@
             font-size: 0.7em;
         }
     
-        #text__responsive {
-    
-            text-align: justify;
-        }
-        
-        
     
         .column-responsive {
             display: flex;
